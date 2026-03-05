@@ -1,27 +1,205 @@
-<main class="container" style="margin-top: 40px;">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
-        <h2>Chuyên Mục: Sách Kỹ Năng</h2>
-        <select style="padding: 5px;">
-            <option>Sắp xếp: Mới nhất</option>
-            <option>Giá: Thấp đến Cao</option>
-        </select>
-    </div>
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sách Kỹ Năng | Thư Hiên</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Thư Hiên" style="height: 60px" />
+      </div>
 
-    <div class="product-grid">
-        <div class="card">
-            <img src="https://picsum.photos/300/400?random=10" alt="Book">
-            <div class="card-info">
-                <h3>Kỹ Năng Giải Quyết Vấn Đề</h3>
-                <p class="price">120.000đ</p>
-                <a href="detail.html" class="btn-buy" style="text-decoration: none; display: inline-block;">Xem ngay</a>
+      <ul class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="category.html"
+          >Danh mục
+          <i class="fa-solid fa-chevron-down" style="font-size: 10px"></i
+        ></a>
+        <ul class="dropdown-content">
+          <li><a href="#">Sách Văn Học</a></li>
+          <li><a href="#">Triết Học - Tâm Lý</a></li>
+          <li><a href="#">Sách Ngoại Văn</a></li>
+          <li><a href="#">Ấn Bản Giới Hạn</a></li>
+          <li><a href="#">Sách Thiếu Nhi</a></li>
+        </ul>
+        <a href="#">Bán lại sách cũ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Tin tức</a>
+        <a href="#">Liên hệ</a>
+      </ul>
+
+      <div class="header-icons">
+        <i class="fa-solid fa-magnifying-glass" title="Tìm kiếm"></i>
+        <i class="fa-regular fa-user" title="Tài khoản"></i>
+        <div class="cart-icon" title="Giỏ hàng">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+    <div class="category-layout">
+      <aside class="filter-sidebar">
+        <h3>Bộ lọc sản phẩm</h3>
+        <div class="filter-group">
+          <h4>Khoảng giá</h4>
+          <ul>
+            <li><input type="checkbox" /> Dưới 100.000đ</li>
+            <li><input type="checkbox" /> 100.000đ - 300.000đ</li>
+            <li><input type="checkbox" /> Trên 300.000đ</li>
+          </ul>
+        </div>
+        <div class="filter-group">
+          <h4>Tình trạng</h4>
+          <ul>
+            <li><input type="checkbox" /> Sách mới</li>
+            <li><input type="checkbox" /> Sách sưu tầm</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="products-section">
+        <div class="sort-bar">
+          <p>Hiển thị 5 sản phẩm</p>
+          <select>
+            <option>Mới nhất</option>
+            <option>Giá tăng dần</option>
+            <option>Giá giảm dần</option>
+          </select>
+        </div>
+
+        <div class="book-grid">
+          <div class="book-card">
+            <div class="book-image">
+              <img src="https://picsum.photos/300/400?random=1" alt="Book" />
+              <div class="overlay">
+                <a href="detail.html" class="view-btn">Xem chi tiết</a>
+              </div>
             </div>
+            <div class="book-info">
+              <h3>Đắc Nhân Tâm</h3>
+              <p class="author">Dale Carnegie</p>
+              <p class="price">86.000đ</p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-image">
+              <img src="https://picsum.photos/300/400?random=2" alt="Book" />
+              <div class="overlay">
+                <a href="detail.html" class="view-btn">Xem chi tiết</a>
+              </div>
+            </div>
+            <div class="book-info">
+              <h3>Kỹ năng lắng nghe</h3>
+              <p class="author">Nhiều tác giả</p>
+              <p class="price">120.000đ</p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-image">
+              <img src="https://picsum.photos/300/400?random=3" alt="Book" />
+              <div class="overlay">
+                <a href="detail.html" class="view-btn">Xem chi tiết</a>
+              </div>
+            </div>
+            <div class="book-info">
+              <h3>Tư duy phản biện</h3>
+              <p class="author">Zoe McKey</p>
+              <p class="price">95.000đ</p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-image">
+              <img src="https://picsum.photos/300/400?random=4" alt="Book" />
+              <div class="overlay">
+                <a href="detail.html" class="view-btn">Xem chi tiết</a>
+              </div>
+            </div>
+            <div class="book-info">
+              <h3>Làm chủ thời gian</h3>
+              <p class="author">Brian Tracy</p>
+              <p class="price">110.000đ</p>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-image">
+              <img src="https://picsum.photos/300/400?random=5" alt="Book" />
+              <div class="overlay">
+                <a href="detail.html" class="view-btn">Xem chi tiết</a>
+              </div>
+            </div>
+            <div class="book-info">
+              <h3>Giao tiếp thông minh</h3>
+              <p class="author">Leil Lowndes</p>
+              <p class="price">150.000đ</p>
+            </div>
+          </div>
         </div>
-        </div>
-
-    <div class="pagination">
-        <div class="page-item active">1</div>
-        <div class="page-item">2</div>
-        <div class="page-item">3</div>
-        <div class="page-item">Tiếp »</div>
+      </section>
     </div>
-</main>
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <h4>TIỆM SÁCH THƯ HIÊN</h4>
+          <p style="font-size: 13px; line-height: 1.8">
+            Thư Hiên không chỉ bán sách, chúng mình bán những ký ức được lưu giữ
+            qua thời gian. Mỗi cuốn sách là một người bạn cũ chờ chủ nhân mới.
+          </p>
+        </div>
+        <div>
+          <h4>Khám phá</h4>
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              font-size: 13px;
+              line-height: 2;
+            "
+          >
+            <li>Sách Văn học</li>
+            <li>Triết học & Đời sống</li>
+            <li>Sách ngoại văn cũ</li>
+            <li>Ấn phẩm giới hạn</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hỗ trợ</h4>
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              font-size: 13px;
+              line-height: 2;
+            "
+          >
+            <li>Hướng dẫn mua hàng</li>
+            <li>Chính sách vận chuyển</li>
+            <li>Liên hệ hợp tác</li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h4>Đăng ký nhận tin</h4>
+          <p style="font-size: 12px">Nhận thông báo khi có sách hiếm về kho.</p>
+          <input type="email" placeholder="Email của bạn..." />
+          <button
+            style="
+              background: var(--accent);
+              border: none;
+              padding: 10px 20px;
+              color: white;
+              width: 100%;
+              cursor: pointer;
+            "
+          >
+            GỬI NGAY
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
