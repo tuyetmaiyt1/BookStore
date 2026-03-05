@@ -1,25 +1,117 @@
-<main class="container" style="margin-top: 50px;">
-    <div class="detail-box">
-        <div class="detail-img">
-            <img src="https://picsum.photos/500/700?random=1" alt="Book Detail">
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đắc Nhân Tâm | Thư Hiên</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Thư Hiên" style="height: 60px" />
+      </div>
+      <ul class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="category.html"
+          >Danh mục
+          <i class="fa-solid fa-chevron-down" style="font-size: 10px"></i
+        ></a>
+        <a href="#">Bán lại sách cũ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Liên hệ</a>
+      </ul>
+      <div class="header-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="cart-icon">
+          <i class="fa-solid fa-bag-shopping"></i
+          ><span class="cart-count">0</span>
         </div>
-        <div class="detail-content">
-            <nav style="font-size: 0.9rem; margin-bottom: 20px;">Trang chủ / Sách Kỹ Năng / Chi tiết</nav>
-            <h1 style="color: var(--primary); font-size: 2.5rem;">Tư Duy Ngược</h1>
-            <p style="font-size: 1.8rem; color: var(--accent); margin: 15px 0; font-weight: bold;">150.000 VNĐ</p>
-            
-            <div style="margin: 20px 0; line-height: 1.8;">
-                <h3 style="border-bottom: 2px solid #eee; padding-bottom: 5px;">Mô tả nội dung:</h3>
-                <p>Cuốn sách giúp bạn thay đổi góc nhìn về những vấn đề trong cuộc sống, từ đó tìm ra những giải pháp sáng tạo và đột phá mà số đông thường bỏ lỡ...</p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Tác giả: Nguyễn Văn A</li>
-                    <li>Nhà xuất bản: Trẻ</li>
-                    <li>Số trang: 320 trang</li>
-                </ul>
-            </div>
+      </div>
+    </header>
 
-            <button class="btn-buy">THÊM VÀO GIỎ HÀNG</button>
-            <p style="margin-top: 15px; font-style: italic; font-size: 0.9rem;">* Miễn phí giao hàng cho đơn từ 300k</p>
+    <main class="container product-detail-container">
+      <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a> /
+        <a href="category.html">Sách Kỹ Năng</a> / <span>Đắc Nhân Tâm</span>
+      </div>
+
+      <div class="product-main">
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              src="https://picsum.photos/500/700?random=1"
+              alt="Đắc Nhân Tâm"
+            />
+          </div>
         </div>
-    </div>
-</main>
+
+        <div class="product-info-summary">
+          <p class="product-brand">SÁCH KỸ NĂNG</p>
+          <h1 class="product-title">Đắc Nhân Tâm (Bìa Cứng)</h1>
+          <div class="product-meta">
+            <span>Tác giả: <strong>Dale Carnegie</strong></span> |
+            <span
+              >Tình trạng:
+              <strong style="color: var(--accent)">Còn hàng</strong></span
+            >
+          </div>
+
+          <p class="product-price">86.000đ</p>
+
+          <div class="product-short-desc">
+            <p>
+              Cuốn sách đầu tiên và hay nhất mọi thời đại về nghệ thuật giao
+              tiếp và ứng xử, đã giúp hàng triệu người trên thế giới thành công.
+            </p>
+          </div>
+
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <button>-</button>
+              <input type="number" value="1" min="1" />
+              <button>+</button>
+            </div>
+            <button class="add-to-cart-btn">THÊM VÀO GIỎ HÀNG</button>
+          </div>
+
+          <div class="product-trust-badges">
+            <div class="badge-item">
+              <i class="fa-solid fa-truck"></i> Giao hàng trong 24h
+            </div>
+            <div class="badge-item">
+              <i class="fa-solid fa-shield-halved"></i> Kiểm tra hàng trước khi
+              thanh toán
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-tabs">
+        <div class="tab-headers">
+          <button class="tab-link active">MÔ TẢ NỘI DUNG</button>
+          <button class="tab-link">THÔNG TIN CHI TIẾT</button>
+        </div>
+        <div class="tab-content">
+          <p>
+            <strong>Đắc Nhân Tâm</strong> của tác giả Dale Carnegie là cuốn sách
+            nổi tiếng nhất, có ảnh hưởng nhất mọi thời đại. Tác phẩm đã được
+            chuyển ngữ sang hầu hết các thứ tiếng trên thế giới và có mặt ở hàng
+            trăm quốc gia.
+          </p>
+          <p>
+            Cuốn sách không chỉ là những lời khuyên về cách giao tiếp, mà còn là
+            những bài học sâu sắc về nhân sinh, giúp bạn hiểu rõ bản thân và
+            những người xung quanh để có được những mối quan hệ bền vững và chân
+            thành.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer style="margin-top: 50px"></footer>
+  </body>
+</html>
