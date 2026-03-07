@@ -35,7 +35,7 @@ ul { list-style: none; }
 /* 2. Thành phần dùng chung (Header, Footer) */
 header {
     background: var(--white);
-    padding: 15px 5%;
+    padding: 0 5%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,31 +43,71 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 90px; 
 }
 
-.nav-links { display: flex; gap: 30px; }
-.nav-links li { position: relative; padding: 10px 0; }
+.nav-links { 
+    display: flex; 
+    gap: 30px; 
+    align-items: center; 
+    height: 100%;
+}
+
+.nav-links li { 
+    position: relative; 
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .nav-links a {
     color: var(--primary);
     font-weight: 600;
     font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    display: flex; 
+    align-items: center;
+    gap: 5px;
 }
 
+/* SỬA LỖI DROPDOWN: Kéo gần lại và thêm hiệu ứng sáng hàng */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 85%; /* SỬA: Kéo gần menu lại mục cha hơn thay vì 100% */
     left: 0;
     background: #fff;
     min-width: 220px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     padding: 10px 0;
     border-top: 3px solid var(--accent);
+    z-index: 1000;
 }
 
-.nav-links li:hover > .dropdown-content { display: block; }
+.nav-links li:hover > .dropdown-content { 
+    display: block; 
+}
+
+/* SỬA: Hiệu ứng di chuột vào hàng nào hàng đó sáng hơn */
+.dropdown-content li {
+    width: 100%;
+    height: auto; /* Tránh li con bị flex ảnh hưởng */
+}
+
+.dropdown-content a {
+    padding: 12px 20px;
+    text-transform: none; /* Menu con không cần in hoa hết */
+    font-weight: 500;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #fcfaf5; /* SỬA: Màu nền sáng hơn khi hover */
+    color: var(--accent);
+    padding-left: 25px; /* Hiệu ứng trượt nhẹ sang phải */
+}
 
 .header-icons { display: flex; gap: 20px; align-items: center; }
 .header-icons i { cursor: pointer; font-size: 18px; color: var(--primary); }
