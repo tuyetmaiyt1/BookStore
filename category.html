@@ -12,37 +12,43 @@
   <body>
     <header>
       <div class="logo">
-        <img src="image/logo.png" alt="Thư Hiên" style="height: 60px" />
+        <a href="index.html"
+          ><img src="image/logo.png" width="100" alt="Thư Hiên"
+        /></a>
       </div>
-
-      <ul class="nav-links">
-        <li><a href="index.html">Trang chủ</a></li>
-        <li class="has-dropdown">
-          <a href="category.html">
-            Danh mục
-            <i class="fa-solid fa-chevron-down" style="font-size: 10px"></i>
-          </a>
-          <ul class="dropdown-content">
-            <li><a href="sach-ky-nang.html">Sách Kỹ Năng</a></li>
-            <li><a href="#">Sách Văn Học</a></li>
-            <li><a href="#">Triết Học - Tâm Lý</a></li>
-            <li><a href="#">Sách Ngoại Văn</a></li>
-            <li><a href="#">Ấn Bản Giới Hạn</a></li>
-            <li><a href="#">Sách Thiếu Nhi</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Bán lại sách cũ</a></li>
-        <li><a href="#">Giới thiệu</a></li>
-        <li><a href="#">Tin tức</a></li>
-        <li><a href="#">Liên hệ</a></li>
-      </ul>
-
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Trang Chủ</a></li>
+          <li class="has-dropdown">
+            <a href="category.html"
+              >Danh Mục <i class="fa-solid fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-content">
+              <li><a href="page-sach-ky-nang.html">Sách Kỹ Năng</a></li>
+              <li>
+                <a href="page-triet-hoc-&-doi-song.html"
+                  >Triết Học Và Đời Sống</a
+                >
+              </li>
+              <li><a href="page-sach-ngoai-van.html">Sách Ngoại Văn</a></li>
+              <li><a href="page-an-ban-gioi-han.html">Ấn Bản Giới Hạn</a></li>
+              <li>
+                <a href="page-sach-thieu-nhi-xua.html">Sách Thiếu Nhi Xưa</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Bán Lại Sách Cũ</a></li>
+          <li><a href="#">Giới Thiệu</a></li>
+          <li><a href="news.html">Tin Tức</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+        </ul>
+      </nav>
       <div class="header-icons">
-        <i class="fa-solid fa-magnifying-glass" title="Tìm kiếm"></i>
-        <i class="fa-regular fa-user" title="Tài khoản"></i>
-        <div class="cart-icon" title="Giỏ hàng">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <span class="cart-count">0</span>
+        <i class="fa-solid fa-search"></i>
+        <i class="fa-regular fa-user"></i>
+        <div class="cart-icon">
+          <i class="fa-solid fa-shopping-bag"></i
+          ><span class="cart-badge">0</span>
         </div>
       </div>
     </header>
@@ -87,92 +93,111 @@
             </select>
           </div>
 
-          <div class="book-grid">
-            <div class="book-card">
-              <div class="book-image">
-                <img src="image/dacnhantam.png" alt="Book" />
-                <div class="overlay">
-                  <a href="detail-dac-nhan-tam.html" class="view-btn"
-                    >Xem chi tiết</a
-                  >
-                </div>
+          <div class="product-grid">
+            <div class="product-card">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?q=80&w=600&auto=format&fit=crop"
+                  alt="1984"
+                />
               </div>
-              <div class="book-info">
-                <h3>Đắc Nhân Tâm</h3>
-                <p class="author">Dale Carnegie</p>
-                <p class="price">86.000đ</p>
+              <div class="product-info">
+                <h3 class="product-title">1984 - George Orwell</h3>
+                <div class="product-bottom">
+                  <div class="price-box">
+                    <span class="new-price">120.000đ</span>
+                    <span class="old-price">150.000đ</span>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="btn-view" title="Xem chi tiết">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn-cart" title="Thêm vào giỏ">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="book-card">
-              <div class="book-image">
-                <img src="image/nghethuatchonbanmachoi.png" alt="Book" />
-                <div class="overlay">
-                  <a
-                    href="detail-nghe-thuat-chon-ban-ma-choi.html"
-                    class="view-btn"
-                    >Xem chi tiết</a
-                  >
-                </div>
+            <div class="product-card">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=600&auto=format&fit=crop"
+                  alt="Đắc Nhân Tâm"
+                />
               </div>
-              <div class="book-info">
-                <h3>Nghệ thuật "Chọn bạn mà chơi"</h3>
-                <p class="author">Marisa G.Franco</p>
-                <p class="price">135.000đ</p>
+              <div class="product-info">
+                <h3 class="product-title">Đắc Nhân Tâm</h3>
+                <div class="product-bottom">
+                  <div class="price-box">
+                    <span class="new-price">85.000đ</span>
+                    <span class="old-price">110.000đ</span>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="btn-view" title="Xem chi tiết">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn-cart" title="Thêm vào giỏ">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="book-card">
-              <div class="book-image">
-                <img src="image/tuduyphanbien.png" alt="Book" />
-                <div class="overlay">
-                  <a href="detail-tu-duy-phan-bien.html" class="view-btn"
-                    >Xem chi tiết</a
-                  >
-                </div>
+            <div class="product-card">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=600&auto=format&fit=crop"
+                  alt="Chiến Tranh và Hòa Bình"
+                />
               </div>
-              <div class="book-info">
-                <h3>Tư duy phản biện</h3>
-                <p class="author">Zoe McKey</p>
-                <p class="price">95.000đ</p>
+              <div class="product-info">
+                <h3 class="product-title">Chiến Tranh & Hòa Bình</h3>
+                <div class="product-bottom">
+                  <div class="price-box">
+                    <span class="new-price">250.000đ</span>
+                    <span class="old-price">320.000đ</span>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="btn-view" title="Xem chi tiết">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn-cart" title="Thêm vào giỏ">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="book-card">
-              <div class="book-image">
-                <img src="image/cudanhthuctinhtrisangtao.png" alt="Book" />
-                <div class="overlay">
-                  <a
-                    href="detail-cu-danh-thuc-tinh-sang-tao.html"
-                    class="view-btn"
-                    >Xem chi tiết</a
-                  >
+            <div class="product-card">
+              <div class="product-img">
+                <img
+                  src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?q=80&w=600&auto=format&fit=crop"
+                  alt="Thế Giới Của Sophie"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-title">Thế Giới Của Sophie</h3>
+                <div class="product-bottom">
+                  <div class="price-box">
+                    <span class="new-price">145.000đ</span>
+                    <span class="old-price">180.000đ</span>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="btn-view" title="Xem chi tiết">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn-cart" title="Thêm vào giỏ">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
                 </div>
-              </div>
-              <div class="book-info">
-                <h3>Cú đánh thức tỉnh sáng tạo</h3>
-                <p class="author">Roger Von Oech</p>
-                <p class="price">110.000đ</p>
-              </div>
-            </div>
-
-            <div class="book-card">
-              <div class="book-image">
-                <img src="image/giaotiepthongminh.png" alt="Book" />
-                <div class="overlay">
-                  <a href="detail-giao-tiep-thong-minh.html" class="view-btn"
-                    >Xem chi tiết</a
-                  >
-                </div>
-              </div>
-              <div class="book-info">
-                <h3>Giao tiếp thông minh</h3>
-                <p class="author">Patrick King</p>
-                <p class="price">90.000đ</p>
               </div>
             </div>
           </div>
-
           <div
             class="pagination"
             style="
@@ -201,63 +226,131 @@
       </div>
     </div>
 
-    <footer>
+    <footer class="reveal">
       <div class="footer-grid">
         <div>
-          <h4>TIỆM SÁCH THƯ HIÊN</h4>
-          <p style="font-size: 13px; line-height: 1.8">
-            Thư Hiên không chỉ bán sách, chúng mình bán những ký ức được lưu giữ
-            qua thời gian. Mỗi cuốn sách là một người bạn cũ chờ chủ nhân mới.
+          <h4 style="color: white; margin-bottom: 20px">THƯ HIÊN</h4>
+          <p style="color: #aaa; font-size: 14px">
+            Di sản tri thức từ những trang giấy cũ.
           </p>
+          <div class="social-links" style="margin-top: 20px">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              style="color: white; margin-right: 15px"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              style="color: white; margin-right: 15px"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://youtube.com" target="_blank" style="color: white"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
         </div>
         <div>
-          <h4>Khám phá</h4>
+          <h4 style="color: white; margin-bottom: 20px">DANH MỤC</h4>
           <ul
             style="
               list-style: none;
-              padding: 0;
-              font-size: 13px;
+              color: #aaa;
+              font-size: 14px;
               line-height: 2;
             "
           >
-            <li>Sách Văn học</li>
-            <li>Triết học & Đời sống</li>
-            <li>Sách ngoại văn cũ</li>
-            <li>Ấn phẩm giới hạn</li>
+            <li>
+              <a href="category.html" style="color: #aaa; text-decoration: none"
+                >Sách Kỹ Năng</a
+              >
+            </li>
+            <li>
+              <a
+                href="page-triet-hoc-&-doi-song.html"
+                style="color: #aaa; text-decoration: none"
+                >Triết học Và Đời Sống</a
+              >
+            </li>
+            <li>
+              <a
+                href="page-sach-ngoai-van.html"
+                style="color: #aaa; text-decoration: none"
+                >Sách Ngoại văn</a
+              >
+            </li>
+            <li>
+              <a
+                href="page-an-ban-gioi-han.html"
+                style="color: #aaa; text-decoration: none"
+                >Ấn Bản Giới Hạn</a
+              >
+            </li>
+            <li>
+              <a
+                href="page-sach-thieu-nhi-xua.html"
+                style="color: #aaa; text-decoration: none"
+                >Sách Thiếu Nhi Xưa</a
+              >
+            </li>
           </ul>
         </div>
         <div>
-          <h4>Hỗ trợ</h4>
+          <h4 style="color: white; margin-bottom: 20px">HỖ TRỢ</h4>
           <ul
             style="
               list-style: none;
-              padding: 0;
-              font-size: 13px;
+              color: #aaa;
+              font-size: 14px;
               line-height: 2;
             "
           >
-            <li>Hướng dẫn mua hàng</li>
-            <li>Chính sách vận chuyển</li>
-            <li>Liên hệ hợp tác</li>
+            <li>
+              <a
+                href="chinh-sach.html"
+                style="color: #aaa; text-decoration: none"
+                >Đổi trả</a
+              >
+            </li>
+            <li>
+              <a
+                href="chinh-sach.html"
+                style="color: #aaa; text-decoration: none"
+                >Giao hàng</a
+              >
+            </li>
+            <li>
+              <a href="lien-he.html" style="color: #aaa; text-decoration: none"
+                >Liên hệ</a
+              >
+            </li>
+            <li>
+              <a
+                href="chinh-sach.html"
+                style="color: #aaa; text-decoration: none"
+                >Chính sách bảo mật</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="contact-form">
-          <h4>Đăng ký nhận tin</h4>
-          <p style="font-size: 12px">Nhận thông báo khi có sách hiếm về kho.</p>
-          <input type="email" placeholder="Email của bạn..." />
+        <div>
+          <h4 style="color: white; margin-bottom: 20px">BẢN TIN</h4>
+          <input
+            type="email"
+            placeholder="Email của bạn"
+            class="footer-input"
+          />
           <button
-            style="
-              background: var(--accent);
-              border: none;
-              padding: 10px 20px;
-              color: white;
-              width: 100%;
-              cursor: pointer;
-            "
+            class="btn-icon"
+            style="margin-top: 10px; padding: 10px 20px; font-size: 12px"
           >
-            GỬI NGAY
+            Gửi
           </button>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Tiệm Sách Thư Hiên. All rights reserved.</p>
       </div>
     </footer>
   </body>
